@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'GillSansCondC';
+    src: url('../fonts/gill/GillSansCondC-Bold.eot');
+    src: local('GillSansCondC Bold'), local('GillSansCondC-Bold'),
+        url('../fonts/gill/GillSansCondC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gill/GillSansCondC-Bold.woff2') format('woff2'),
+        url('../fonts/gill/GillSansCondC-Bold.woff') format('woff'),
+        url('../fonts/gill/GillSansCondC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GillSansCondC';
+    src: url('../fonts/gill/GillSansCondC.eot');
+    src: local('GillSansCondC'),
+        url('../fonts/gill/GillSansCondC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gill/GillSansCondC.woff2') format('woff2'),
+        url('../fonts/gill/GillSansCondC.woff') format('woff'),
+        url('../fonts/gill/GillSansCondC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Medium.eot');
+  src: local('Gilroy Medium'), local('Gilroy-Medium'),
+      url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+      url('Gilroy-Medium.woff') format('woff'),
+      url('Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  color: #31261a;
+  letter-spacing: 0em;
+  background-color: #f9f9f9;
+  --pr-grean-el: #819b57;
+  --sec-grean-el: #465929;
+  --sec-brown-el: #a18268;
+  --sec-white-el: #cfcfbc;
+}
+
+header {
+  background: var(--pr-grean-el);
+}
+
+.logo {
+  font-family: 'GillSansCondC';
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #faf4ea;
+}
+
+.logo > span {
+  font-weight: 800;
+}
+
+.link {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
