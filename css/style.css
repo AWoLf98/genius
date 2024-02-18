@@ -1,36 +1,50 @@
-@font-face {
-    font-family: 'GillSansCondC';
-    src: url('../fonts/gill/GillSansCondC-Bold.eot');
-    src: local('GillSansCondC Bold'), local('GillSansCondC-Bold'),
-        url('../fonts/gill/GillSansCondC-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/gill/GillSansCondC-Bold.woff2') format('woff2'),
-        url('../fonts/gill/GillSansCondC-Bold.woff') format('woff'),
-        url('../fonts/gill/GillSansCondC-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+:root {
+  --pr-white-el: #faf4ea;
+  --pr-black-el: #31261a;
+  --pr-grean-el: #819b57;
+  --sec-grean-el: #465929;
+  --sec-brown-el: #a18268;
+  --sec-white-el: #cfcfbc;
 }
 
 @font-face {
-    font-family: 'GillSansCondC';
-    src: url('../fonts/gill/GillSansCondC.eot');
-    src: local('GillSansCondC'),
-        url('../fonts/gill/GillSansCondC.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/gill/GillSansCondC.woff2') format('woff2'),
-        url('../fonts/gill/GillSansCondC.woff') format('woff'),
-        url('../fonts/gill/GillSansCondC.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'GillSansCondC';
+  src: url('../fonts/gill/GillSansCondC-Bold.eot');
+  src: local('GillSansCondC Bold'), local('GillSansCondC-Bold'),
+    url('../fonts/gill/GillSansCondC-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gill/GillSansCondC-Bold.woff2') format('woff2'),
+    url('../fonts/gill/GillSansCondC-Bold.woff') format('woff'),
+    url('../fonts/gill/GillSansCondC-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSansCondC';
+  src: url('../fonts/gill/GillSansCondC.eot');
+  src: local('GillSansCondC'),
+    url('../fonts/gill/GillSansCondC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gill/GillSansCondC.woff2') format('woff2'),
+    url('../fonts/gill/GillSansCondC.woff') format('woff'),
+    url('../fonts/gill/GillSansCondC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy';
   src: url('Gilroy-Medium.eot');
   src: local('Gilroy Medium'), local('Gilroy-Medium'),
-      url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-      url('Gilroy-Medium.woff') format('woff'),
-      url('Gilroy-Medium.ttf') format('truetype');
+    url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-Medium.woff') format('woff'), url('Gilroy-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 h1,
@@ -38,6 +52,7 @@ h2,
 h3,
 h4,
 h5,
+h6,
 p {
   margin: 0;
 }
@@ -67,19 +82,16 @@ button {
 }
 
 body {
-  font-family: 'Poppins';
-  margin: 0;
-  color: #31261a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   letter-spacing: 0em;
-  background-color: #f9f9f9;
-  --pr-grean-el: #819b57;
-  --sec-grean-el: #465929;
-  --sec-brown-el: #a18268;
-  --sec-white-el: #cfcfbc;
+  margin: 0;
+  color: var(--pr-black-el);
+  background-color: var(--pr-white-el);
 }
 
 header {
-  background: var(--pr-grean-el);
+  background: var(--sec-grean-el);
 }
 
 .logo {
@@ -87,8 +99,8 @@ header {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
-  color: #faf4ea;
+  line-height: 1.17;
+  color: var(--pr-white-el);
 }
 
 .logo > span {
@@ -96,8 +108,141 @@ header {
 }
 
 .link {
-  font-family: Poppins;
   font-size: 18px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.5;
+  color: var(--pr-white-el);
+}
+
+header .link:focus,
+header .link:hover {
+  font-weight: 600;
+  color: var(--pr-grean-el);
+}
+
+.connect-button {
+  font-family: 'Poppins';
+  min-width: 238px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 5px;
+  outline: transparent;
+  color: var(--pr-white-el);
+  background-color: var(--pr-grean-el);
+  border: 2px solid var(--pr-grean-el);
+}
+
+.connect-button:hover,
+.connect-button:focus {
+  background-color: var(--pr-white-el);
+  color: var(--pr-black-el);
+}
+
+.main-h {
+  font-size: 128px;
+  font-weight: 900;
+  line-height: 192px;
+  text-align: center;
+  color: var(--pr-grean-el);
+}
+
+.main-h > span {
+  color: var(--pr-white-el);
+}
+
+.list-advantages {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  background-color: var(--pr-grean-el);
+  color: var(--pr-white-el);
+}
+
+.header-section-traditions,
+.header-section-chefs,
+.header-formats,
+.header-conects {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.shop-bakery,
+.shop-bakery-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.shop-bakery > span,
+.shop-bakery-description > span {
+  font-weight: 600;
+  color: var(--pr-grean-el);
+}
+
+.header-section-chefs > span {
+  color: var(--sec-grean-el);
+}
+
+.header-article {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.paragraph-article {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.header-article-formats {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--pr-white-el);
+}
+
+.paragraph-article-formats {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.galery-buttons,
+.galery-buttons > svg {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.galery-buttons {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: var(--sec-brown-el);
+}
+
+.address-link {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--pr-white-el);
+}
+
+.politics {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--pr-white-el);
+}
+
+.copy {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--sec-brown-el);
 }
