@@ -16,7 +16,6 @@
     url('../fonts/gill/GillSansCondC-Bold.woff') format('woff'),
     url('../fonts/gill/GillSansCondC-Bold.ttf') format('truetype');
   font-weight: bold;
-  font-style: normal;
 }
 
 @font-face {
@@ -27,8 +26,6 @@
     url('../fonts/gill/GillSansCondC.woff2') format('woff2'),
     url('../fonts/gill/GillSansCondC.woff') format('woff'),
     url('../fonts/gill/GillSansCondC.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
@@ -38,7 +35,6 @@
     url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
     url('Gilroy-Medium.woff') format('woff'), url('Gilroy-Medium.ttf') format('truetype');
   font-weight: 500;
-  font-style: normal;
 }
 
 *,
